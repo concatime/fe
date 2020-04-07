@@ -1,5 +1,4 @@
 #include "fe.h"
-#include "merde.h"
 #include <setjmp.h>
 
 static jmp_buf toplevel;
