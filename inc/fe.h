@@ -13,6 +13,10 @@
 
 #define FE_VERSION "1.0"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef float fe_Number;
 typedef struct fe_Object fe_Object;
 typedef struct fe_Context fe_Context;
@@ -71,4 +75,8 @@ fe_Object *fe_read(fe_Context *ctx, fe_ReadFn fn, void *udata);
 fe_Object *fe_readfp(fe_Context *ctx, FILE *fp);
 fe_Object *fe_eval(fe_Context *ctx, fe_Object *obj);
 
+#ifdef __cplusplus
+}
 #endif
+
+#endif // FE_H
