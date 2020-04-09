@@ -2,7 +2,7 @@
 #include <setjmp.h>
 
 static jmp_buf toplevel;
-static char buf[64000];
+static char buf[65536UL];
 
 static void onerror(fe_Context *ctx, const char *msg, fe_Object *cl) {
 	(void)ctx, (void)cl;
