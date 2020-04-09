@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc src/fe.c -DFE_STANDALONE -O3 -o fe -Wall -Wextra -std=c89 -pedantic
+${CC:${cc:gcc}} -std=c89 -pedantic -Wall -Wextra -O3 -I inc/ -o fe src/fe.c src/main.c
