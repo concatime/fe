@@ -5,7 +5,7 @@ static jmp_buf toplevel;
 static char buf[64000];
 
 static void onerror(fe_Context *ctx, const char *msg, fe_Object *cl) {
-	unused(ctx), unused(cl);
+	(void)ctx, (void)cl;
 	fprintf(stderr, "error: %s\n", msg);
 	longjmp(toplevel, -1);
 }
