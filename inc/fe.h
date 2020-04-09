@@ -79,4 +79,4 @@ fe_Object *fe_eval(fe_Context *ctx, fe_Object *obj);
 }
 #endif
 
-#endif // FE_H
+#endif /* FE_H */
