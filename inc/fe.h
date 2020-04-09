@@ -1,9 +1,9 @@
 /*
-** Copyright (c) 2020 rxi
-**
-** This library is free software; you can redistribute it and/or modify it
-** under the terms of the MIT license. See `fe.c` for details.
-*/
+ * Copyright (c) 2020 rxi
+ *
+ * This library is free software; you can redistribute it and/or modify it
+ * under the terms of the MIT license. See `fe.c` for details.
+ */
 
 #ifndef FE_H
 #define FE_H
